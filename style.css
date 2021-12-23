@@ -1,0 +1,60 @@
+body {
+    background-color: black;    
+    background-image: url('img/whitenoise.gif');   
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    background-color: black;
+    background-image: url('img/jelly.png');
+    background-size: 20%;
+    mix-blend-mode: hard-light;
+}
+
+section {
+    display: none;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.9);
+    border: 4px solid aquamarine;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem aquamarine,
+                0 0 0.8rem aquamarine,
+                0 0 2.8rem aquamarine,
+                inset 0 0 1.3rem aquamarine;
+    color:aquamarine;
+    font-size: x-large;
+    
+}
+
+div.images {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.images > div {
+    max-width: 300px;
+}
+
+div.images svg:hover {
+    cursor: pointer;
+}
+
+div.images svg {
+    width: 100%;
+}
+
+input {
+    display: none;
+}
